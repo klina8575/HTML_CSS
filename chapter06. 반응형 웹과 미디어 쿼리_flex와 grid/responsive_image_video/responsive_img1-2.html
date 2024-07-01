@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin: 0 auto;
+            width: 700px;
+            height: 500px;
+            background: rosybrown;
+        }
+
+        .img1 { 
+            width: 500px;
+            display: block;
+            margin: 0 auto; 
+        }
+
+        @media screen and (max-width: 767px) {
+            div {
+                width: 100%;
+            }
+            .img1 { 
+                width: 100%; 
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CHEER UP!</h1>
+        <img src="lime.jpg" class="img1">
+    </div>
+</body>
+</html>

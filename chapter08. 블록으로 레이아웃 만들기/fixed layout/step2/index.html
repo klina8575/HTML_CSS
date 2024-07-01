@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>네이버 고정형 레이아웃 만들기</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="wrap">
+         <header class="header">
+            <div style="background-color: cadetblue" class="header__search">
+               검색창
+            </div>
+            <nav style="background-color: burlywood" class="header__menu">
+               메뉴
+            </nav>
+         </header>
+         <main>
+            <div class="left">
+               <!-- 광고배너-->
+               <section style="background-color: coral" class="left__banner">
+                  배너
+               </section>
+
+               <!-- 뉴스스탠드 -->
+               <section
+                  style="background-color: yellowgreen"
+                  class="left__news"
+               >
+                  뉴스스탠드
+               </section>
+
+               <!-- 오늘 읽을만한 글(우선 리빙 탭 기준으로 작성) -->
+               <section
+                  style="background-color: dimgray"
+                  class="left__themecast"
+               >
+                  <div
+                     style="background-color: deepskyblue"
+                     class="themecast__header"
+                  >
+                     자동차 웹툰 경제 추천구독 레시피 리빙 책방
+                  </div>
+                  <!-- themecast__header에 있는 탭을 클릭시 themecast__contents 내용물이 한꺼번에 바뀌므로 <div>로 묶어준다. -->
+                  <div class="themecast__contents">
+                     <div
+                        style="background-color: brown"
+                        class="themecast__living1"
+                     >
+                        <ul class="living__list">
+                           <li>
+                              <a href="#" class="living__list__img">이미지</a>
+                              <a href="#" class="living__list__contents"
+                                 >내용</a
+                              >
+                           </li>
+                           <li>
+                              <a href="#" class="living__list__img">이미지</a>
+                              <a href="#" class="living__list__contents"
+                                 >내용</a
+                              >
+                           </li>
+                           <li>
+                              <a href="#" class="living__list__img">이미지</a>
+                              <a href="#" class="living__list__contents"
+                                 >내용</a
+                              >
+                           </li>
+                           <li>
+                              <a href="#" class="living__list__img">이미지</a>
+                              <a href="#" class="living__list__contents"
+                                 >내용</a
+                              >
+                           </li>
+                           <li>
+                              <a href="#" class="living__list__img">이미지</a>
+                              <a href="#" class="living__list__contents"
+                                 >내용</a
+                              >
+                           </li>
+                        </ul>
+                     </div>
+                     <div
+                        style="background-color: violet"
+                        class="themecast__living2"
+                     >
+                        <ul class="living__list">
+                           <li>
+                              <a href="#" class="living__list__img">이미지</a>
+                              <a href="#" class="living__list__contents"
+                                 >내용</a
+                              >
+                           </li>
+                           <li>
+                              <a href="#" class="living__list__img">이미지</a>
+                              <a href="#" class="living__list__contents"
+                                 >내용</a
+                              >
+                           </li>
+                           <li>
+                              <a href="#" class="living__list__img">이미지</a>
+                              <a href="#" class="living__list__contents"
+                                 >내용</a
+                              >
+                           </li>
+                           <li>
+                              <a href="#" class="living__list__img">이미지</a>
+                              <a href="#" class="living__list__contents"
+                                 >내용</a
+                              >
+                           </li>
+                           <li>
+                              <a href="#" class="living__list__img">이미지</a>
+                              <a href="#" class="living__list__contents"
+                                 >내용</a
+                              >
+                           </li>
+                        </ul>
+                     </div>
+                     <div
+                        style="background-color: darkgoldenrod"
+                        class="themecast__hotclick"
+                     >
+                        <div class="hotclick__funding">펀딩</div>
+                        <div class="hotclick__funding">펀딩</div>
+                        <div class="hotclick__funding">펀딩</div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <aside class="aside">
+               <!-- 로그인 -->
+               <section
+                  style="background-color: cadetblue"
+                  class="aside__login"
+               >
+                  로그인
+               </section>
+
+               <!-- 미니뉴스 -->
+               <section
+                  style="background-color: blueviolet"
+                  class="aside__mini"
+               >
+                  미니뉴스
+               </section>
+
+               <!-- 사이드 광고배너 -->
+               <section
+                  style="background-color: blanchedalmond"
+                  class="aside__banner"
+               >
+                  배너
+               </section>
+
+               <!-- 쇼핑 광고 -->
+               <section
+                  style="background-color: darkgreen"
+                  class="aside__shopping"
+               >
+                  쇼핑광고
+               </section>
+            </aside>
+         </main>
+         <footer style="background-color: violet" class="footer">푸터</footer>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,55 @@
+@charset "utf-8"; /* 글자가 깨지지않게 해줌 */
+
+/* ★초기화 코드 */
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.wrap {
+   overflow: hidden;
+
+   /* 이 사이즈보다 작아지면 안된다 -> 최소 1200px 보다 작으면 X */
+   min-width: 1200px;
+}
+
+header {
+   height: 280px;
+   background-color: aqua;
+   position: relative;
+}
+
+main {
+   width: 1200px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+/* 왼쪽 전체 컨텐츠 */
+.left {
+   width: 900px;
+   background-color: azure;
+   height: 2000px;
+   float: left;
+}
+
+/* aside */
+.aside {
+   width: 300px;
+   height: 2600px;
+   background-color: blueviolet;
+   float: right;
+}
+
+footer {
+   height: 500px;
+   background-color: plum;
+   clear: both;
+}

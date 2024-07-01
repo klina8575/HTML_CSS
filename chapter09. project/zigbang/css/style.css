@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* 초기화 태그 */
+
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 0.9em !important;
+}
+
+ul {
+   list-style: none;
+   margin: 0 !important;
+   padding: 0 !important;
+}
+
+a {
+   color: black !important;
+   text-decoration: none !important;
+}
+
+p {
+   margin: 0 !important;
+}
+
+.wrap {
+   min-width: 1200px;
+   overflow: hidden;
+}
+
+/* 헤더 */
+
+header {
+   position: relative;
+   height: 80px;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid rgb(193, 193, 193);
+   background-color: white;
+
+   /* 직방은 header width가 100%입니다 */
+   width: 100%;
+
+   /* 메뉴가 가장 위에 나오도록 */
+   z-index: 999;
+}
+
+.nav__menu > li {
+   /* 하위 메뉴 만들기 위해 적용 */
+   position: relative;
+   top: 0;
+
+   /* 수평정렬 */
+   display: inline-block;
+   padding: 20px;
+}
+
+/* 새로 추가한 내용들 */
+
+nav .login {
+   font-size: 11px;
+   background-color: rgb(232, 232, 232);
+   border: 1px solid rgb(202, 202, 202);
+   border-radius: 5px;
+   color: black;
+   width: 125px !important;
+   height: 30px;
+   margin-right: 20px;
+}
+
+nav .right-menu__btn {
+   width: 113px;
+}
+
+/* 새로 추가한 내용들 끝*/
+
+.w1 {
+   display: block;
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.w2 {
+   display: block;
+   font-size: 13px;
+}
+
+.sub-menu {
+   display: none;
+   width: 200px;
+   background-color: white;
+
+   /* 하위 메뉴 만들기 위해 absolute 적용(li 태그를 기준으로 한다) */
+   position: absolute;
+
+   /* 하위 메뉴가 나타날 적절한 위치를 찾아 적용한다 */
+   top: 85px;
+   border: 1px solid rgb(202, 202, 202);
+}
+
+.nav__menu li:hover .sub-menu {
+   /* 메뉴에 호버하면 .sub-menu가 나타도록 지정한다 */
+   display: block;
+}
+
+.sub-menu > li {
+   padding: 10px;
+}

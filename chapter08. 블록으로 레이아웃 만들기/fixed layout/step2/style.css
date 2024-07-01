@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* 최종완성 */
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.wrap {
+   overflow: hidden;
+   min-width: 1200px;
+}
+
+header {
+   height: 280px;
+   position: relative;
+}
+
+.header__search {
+   height: 200px;
+}
+
+.header__menu {
+   height: 80px;
+}
+
+main {
+   width: 1200px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.left {
+   width: 900px;
+   height: 2600px;
+   float: left;
+}
+
+.left__banner {
+   height: 150px;
+}
+
+.left__news {
+   height: 450px;
+}
+
+.left__themecast {
+   height: 2000px;
+}
+
+.themecast__header {
+   height: 50px;
+}
+
+.themecast__contents {
+   height: 1950px;
+}
+
+.themecast__living1,
+.themecast__living2 {
+   height: 800px;
+}
+
+.living__list {
+   height: 100%;
+}
+
+.living__list li {
+   height: 20%;
+   display: flex;
+}
+
+.living__list__img {
+   display: block;
+   width: 250px;
+}
+
+.living__list__contents {
+   display: block;
+   width: 650px;
+}
+
+.themecast__hotclick {
+   display: flex;
+   height: 350px;
+}
+
+.hotclick__funding {
+   width: 33.33%;
+}
+
+.aside {
+   width: 300px;
+   height: 2600px;
+   float: right;
+}
+
+.aside__login {
+   height: 150px;
+}
+
+.aside__mini {
+   height: 50px;
+}
+
+.aside__banner {
+   height: 150px;
+}
+
+.aside__shopping {
+   height: 100%;
+}
+
+footer {
+   height: 500px;
+}
