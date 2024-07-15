@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <label for="birthday">생일:</label>
+      <input type="date" id="birthday" name="birthday" min="2024-08-01" max="2024-12-31" step="2" value="2024-08-02" />
+
+      <label for="meeting-time">회의 시간:</label>
+      <!-- step은 초단위 (1800초/60 = 30분) -->
+      <input type="time" id="meeting-time" name="meeting-time" min="08:00" max="18:00" step="1800" value="12:00" />
+
+      <label for="meeting-datetime">회의 일시:</label>
+      <!-- step은 초단위 (900초/60 = 15분) -->
+      <input type="datetime-local" id="meeting-datetime" name="meeting-datetime" min="2024-07-14T08:00" max="2024-07-15T18:00" step="900" value="2024-07-14T12:00" />
+
+      <!-- step이 시간에서 적용되지 않는 이유 
+      1. 브라우저 호환성: 각 브라우저가 type="time" 요소를 지원하는 방식과 기능을 구현하는 방식이 다를 수 있습니다. 특히 step 속성의 처리 방식이 브라우저 간에 다를 수 있습니다. 따라서 일부 브라우저는 step 속성을 지원하지 않거나 부분적으로 지원할 수 있습니다.
+
+      2. 시스템 설정에 따른 제한: 사용자의 운영 체제나 브라우저 설정에 따라 시간 선택기의 동작 방식이 결정될 수 있습니다. 예를 들어, 사용자가 시스템 설정에서 시간 선택을 1분 단위로 제한해 두었다면, 브라우저는 step 속성에 지정된 값보다 더 큰 간격으로 시간을 선택할 수 없게 할 수 있습니다. 
+      -->
+   </body>
+</html>
