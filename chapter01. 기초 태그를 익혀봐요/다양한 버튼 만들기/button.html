@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <form action="">
+         <label for="user_id">아이디</label>
+         <input type="text" id="user_id" />
+
+         <label for="user_pw">패스워드</label>
+         <input type="password" id="user_pw" />
+
+         <!-- submit 버튼과 같은 기능(입력한 내용을 버튼 클릭시 서버에 전송) -->
+         <input type="image" src="./images/login.png" alt="로그인버튼" />
+
+         <input type="submit" value="전송" />
+
+         <hr />
+
+         <!-- type="button"은 사용자가 입력한 내용을 서버에 전송하지 않는 일반 버튼 -->
+         <!-- submit 기능외에 다른 용도로 버튼을 사용해야 할때 사용  -->
+         <input type="button" value="시간선택" onclick="window.open('datetime.html')" />
+
+         <hr />
+
+         <!-- 사용가능 -->
+         <a href="https://www.naver.com">
+            <img src="./images/login.png" alt="네이버 로그인" />
+         </a>
+
+         <hr />
+
+         <!-- 사용 X(문법 에러) -->
+         <a href="https://www.naver.com">
+            <input type="button" value="네이버 로그인" />
+         </a>
+      </form>
+   </body>
+</html>

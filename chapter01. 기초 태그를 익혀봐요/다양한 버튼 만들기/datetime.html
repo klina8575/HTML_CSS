@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <form action="">
+         <p>날짜 지정하기</p>
+         <input type="date" />
+         <input type="month" />
+         <input type="week" />
+         <hr />
+
+         <p>시간 지정하기</p>
+         <input type="time" />
+         <input type="datetime-local" />
+         <hr />
+
+         <p>범위 제한하기</p>
+         <label for="birthday">생일</label>
+         <input type="date" name="birthday" id="birthday" min="2024-08-01" max="2024-12-31" value="2024-08-02" step="3" />
+
+         <label for="meeting-time">회의시간</label>
+         <input type="time" name="meeting-time" id="meeting-time" min="08:00" max="18:00" value="12:00" step="1800" />
+         <!-- step: 초단위, 1800/60 = 30분 -->
+
+         <label for="meeting-datetime">회의일시</label>
+         <input type="datetime-local" name="meeting-datetime" id="meeting-datetime" min="2024-07-14T08:00" max="2024-07-15T18:00" value="2024-07-15T18:00" step="1800" />
+
+         <!-- 참고: 시간의 min,max,step이 적용되지 않는 이유
+            첫번째 이유: 브라우저 호환성
+            브라우저 마다 type="time"과  type="datetime-local"의 일부 속성을 지원하지 않는 경우가 존재
+
+            두번째 이유: 사용자의 운영체제나 브라우저 설정해 따라서 시간 선택의 동작방식이 결정되도록 해놨기 때문에
+        -->
+
+         <hr />
+      </form>
+   </body>
+</html>
