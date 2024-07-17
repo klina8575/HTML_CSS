@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 조합선택자: 2개의 선택자를 조합해서 사용(띄어쓰기 X), '~면서'라고 생각하면 쉬움 */
+
+        /* h1태그 면서 head를 class로 가진 요소 */
+        /* h1.head {
+            color: blue;
+        } */
+
+        /* p태그 면서 para1을 class로 가진 요소  */
+        /* p.para1 {
+            color: red;
+        } */
+
+        /* class가 head 면서 comm인 요소 */
+        .head.comm {
+            color: blue;
+        }
+
+        /* class가 para1이면서 id가 test인 요소 */
+        .para1#test {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="head comm">레드향</h1>
+    <p class="para1" id="test">껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+    <p>레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+    <p>비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.</p>
+</body>
+</html>
